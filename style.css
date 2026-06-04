@@ -55,9 +55,10 @@ main{
     justify-content: center;
     align-items: center;
      width:clamp(300px, 50vw, 500px);
-     background-color: #b28e90;
+     background-color: #175066;
      padding:20px;
      border-radius: 10px;
+     color:#FFFFF0;
    
 }
 .inputtype{
@@ -116,7 +117,10 @@ main{
     display: flex;
     justify-content:space-around;
     gap:30px;
-    background-color: #b28e90;
+   background-color: #175066;
+   color:#FFFFF0;
+   padding: 20px;
+   border-radius: 10px;
 }
 .card-content{
     margin-top: 20px;

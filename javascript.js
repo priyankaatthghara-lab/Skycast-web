@@ -12,6 +12,9 @@ let image=document.querySelector(".image");
 let cardtitle=document.querySelector(".card-title");
 let cardsubtitle=document.querySelector(".card-subtitle");
 let aqitext=document.querySelector(".aqitext");
+let cardelement=document.querySelector(".cardelements");
+let nav=document.querySelector("nav");
+let mininews=document.querySelector(".mininews");
 function updateTime(){
     const date=new Date();
     document.querySelector(".day").innerHTML=date.toLocaleDateString("en-us",{weekday:"long"});
@@ -20,14 +23,21 @@ function updateTime(){
 }
 setInterval(updateTime,1000);
 darkmode.addEventListener("click",()=>{
-    document.querySelector("body").style.backgroundColor="Black";
+    document.querySelector("body").style.backgroundColor="#1A1A1A";
     lightmode.style.display="block";
     darkmode.style.display="none";
+    cardelement.style.backgroundColor="#87CEEB";
+    nav.style.color="#FFFFF0";
+    mininews.style.backgroundColor="#87CEEB";
+      
 })
 lightmode.addEventListener("click",()=>{
     document.querySelector("body").style.backgroundColor="White";
     lightmode.style.display="none";
     darkmode.style.display="block";
+    nav.style.color="#1A1A1A";
+    cardelement.style.backgroundColor="#175066";
+    mininews.style.backgroundColor="#175066";
 })
 const apikey=("f23cf4b7ad763b4313dee9d7fd95210c");
 const apiurl=("https://api.openweathermap.org/data/2.5/weather?units=metric&q=");
